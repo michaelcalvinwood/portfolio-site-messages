@@ -31,4 +31,4 @@ const client = mailgun.client({username: 'api', key: MAIL_GUN_API_KEY});
     }
  }
 
- exports.sendEmailViaMailGun ('michaelwood33311@icloud.com', 'admin@treepadcloud.com', 'Test Message', 'Checking API', 'TreePad Cloud');
+ //exports.sendEmailViaMailGun ('michaelwood33311@icloud.com', 'admin@treepadcloud.com', 'Test Message', 'Checking API', 'TreePad Cloud');

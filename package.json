@@ -9,8 +9,11 @@
   "author": "Michael Wood",
   "license": "SEE LICENSE IN license.md",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "form-data": "^4.0.0",
+    "https": "^1.0.0",
     "mailgun": "^0.5.0",
     "mailgun.js": "^9.2.1"
   }
