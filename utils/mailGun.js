@@ -4,7 +4,11 @@ const formData = require('form-data');
 const Mailgun = require('mailgun.js');
 
 const mailgun = new Mailgun(formData);
-const client = mailgun.client({username: 'api', key: process.env.MAIL_GUN_API_KEY});
+
+const { MAIL_GUN_API_KEY } = process.env;
+console.log(MAIL_GUN_API_KEY);
+
+const client = mailgun.client({username: 'api', key: MAIL_GUN_API_KEY});
 
  
  exports.sendEmailViaMailGun = async (email, sender, subject, message, senderName) => {
@@ -26,3 +30,5 @@ const client = mailgun.client({username: 'api', key: process.env.MAIL_GUN_API_KE
       return false;
     }
  }
+
+ exports.sendEmailViaMailGun ('michaelwood33311@icloud.com', 'admin@treepadcloud.com', 'Test Message', 'Checking API', 'TreePad Cloud');
